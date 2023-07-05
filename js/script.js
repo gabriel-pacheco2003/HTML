@@ -30,10 +30,11 @@ function enviarFormulario() {
 
     const pessoa = {
         nome: document.getElementById("nome").value,
-        genero: document.getElementById("genero").value,
+        genero: document.querySelector('input[name="genero"]:checked').value,
         peso: document.getElementById("peso").value,
         altura: document.getElementById("altura").value
     }
+
     const msg = `Nome: ${pessoa.nome}\nGenero: ${pessoa.genero}\nPeso: ${pessoa.peso}\nAltura: ${pessoa.altura}`;
     document.getElementById("dados").value = msg;
     return false;

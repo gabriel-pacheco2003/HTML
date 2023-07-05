@@ -1,46 +1,101 @@
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="number"],
-  textarea {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 40%;
-  }
-  
-  .radio-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  textarea {
-    margin-top: 15px;
-    width: 40%;
-  }
+body {
+  background-color: rgb(63, 39, 39);
+}
+
+.main {
+  align-items: left;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 7%;
+  width: 30%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 20px;
+  gap: 5px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgba(85, 64, 63, 0.863);
+  box-shadow: 0px 0px 20px 5px rgb(0, 0, 0);
+}
+
+.form legend {
+  align-self: center;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.form .radio-group {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.form [type=text],
+[type=number] {
+  height: 30px;
+  border-radius: 20px;
+  padding: 4px;
+  border: 0px;
+}
+
+.form .peso {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.form .altura {
+  margin-left: 10px;
+}
+
+.form .submit {
+  align-self: center;
+  margin-top: 10px;
+  width: 50%;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+}
+
+.form .submit:hover {
+  background-color: lightcoral;
+}
+
+.form textarea {
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+}
+
+a:link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  border-radius: 20px;
+  border: 0;
+  margin-top: 10px;
+  width: 50%;
+  height: 40px;
+  background-color: white;
+}
+
+a:hover {
+  background-color: lightcoral;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:active {
+  font-size: 20px;
+}

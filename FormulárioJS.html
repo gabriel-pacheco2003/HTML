@@ -9,32 +9,42 @@
 </head>
 
 <body>
-    <form action="#" method="get" onsubmit="return enviarFormulario()">
-        <div class="form-group"></div>
-        <label for="nome">Nome :</label>
-        <input type="text" id="nome" name="nome" />
-        </div>
-        <br />
-        <label>Genêro :</label>
-        <div class="radio-group">
-        <label type="radio" id="homem" name="genero" value="homem"></label>
-        <label for="homem">Masculino</label>
+    <main class="main">
+        <div class="container">
+            <form action="#" method="get" onsubmit="return enviarFormulario()" class="form">
+                <legend>IMC</legend>
+                <label for="nome">Nome :</label>
+                <input type="text" id="nome" name="nome" />
 
-        <input type="radio" id="mulher" name="genero" value="mulher"></label>
-        <label for="mulher">Feminino</label>
+                <br />
+                <label>Genêro :</label>
+                <div class="radio-group">
+                    <div>
+                        <input type="radio" id="homem" name="genero" value="homem">
+                        <label for="homem">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mulher" name="genero" value="mulher">
+                        <label for="mulher">Feminino</label>
+                    </div>
+                </div>
+                <br />
+                <div class="peso">
+                    <label for="peso">Peso:</label>
+                    <input type="number" id="peso" name="peso" required>
+                    <div class="altura">
+                        <label for="altura">Altura (cm) :</label>
+                        <input type="number" id="altura" name="altura" required>
+                    </div>
+                </div>
+                <br />
+                <button class="submit">Avaliar</button>
+                <br />
+                <textarea name="dados" id="dados" cols="40" rows="10"></textarea>
+                <a href="Menu.html">Voltar</a>
+            </form>
         </div>
-        <br />
-        <label for="peso">Peso:</label>
-        <input type="number" id="peso" name="peso" required>
-        <br />
-        <label for="altura">Altura (cm) :</label>
-        <input type="number" id="altura" name="altura" required>
-        <br />
-        <button>Avaliar</button>
-        <br />
-        <textarea name="dados" id="dados" cols="30" rows="10"></textarea>
-    </form>
-    <p><a href="Menu.html">Voltar</a></p>
+    </main>
 </body>
 
 </html>
